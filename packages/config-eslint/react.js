@@ -38,4 +38,15 @@ module.exports = {
   rules: {
     "import/no-default-export": "off",
   },
+  overrides: [
+    {
+      files: ['*.js?(x)', '*.mjs'],
+      parser: "@babel/eslint-parser",
+      parserOptions: {
+        babelOptions: {
+          presets: ["@babel/preset-react"],
+        },
+      },
+    },
+  ]
 };

@@ -6,6 +6,6 @@ const StyledDiv = styled.div`
   color: red;
 `;
 
-export function Test() {
-  return <StyledDiv>Test</StyledDiv>;
+export function Bar() {
+  return <StyledDiv>Bar</StyledDiv>;
 }

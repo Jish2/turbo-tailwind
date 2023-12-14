@@ -2,5 +2,5 @@
 import { Bar } from '@repo/ui/'
 
 export function Foo() {
-  return <div>Foo</div>;
+  return <Bar />;
 }

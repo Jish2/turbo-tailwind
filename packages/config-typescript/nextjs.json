@@ -5,15 +5,12 @@
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
     "allowJs": true,
-    "declaration": false,
-    "declarationMap": false,
-    "incremental": true,
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
-    "resolveJsonModule": true,
-    "strict": true,
-    "target": "es5"
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "target": "ES6",
   },
   "include": ["src", "next-env.d.ts"],
   "exclude": ["node_modules"]

@@ -28,6 +28,9 @@ module.exports = {
     JSX: true,
   },
   settings: {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
     "import/resolver": {
       typescript: {
         project,

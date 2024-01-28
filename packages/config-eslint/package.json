@@ -3,7 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
+    "@typescript-eslint/parser": "latest",
     "@vercel/style-guide": "latest",
-    "eslint-config-turbo": "latest"
+    "@next/eslint-plugin-next": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-config-turbo": "latest",
+    "eslint-plugin-mdx": "latest",
+    "eslint-plugin-only-warn": "latest",
+    "eslint-plugin-storybook": "latest",
+    "prettier-plugin-prisma": "latest",
+    "prettier-plugin-tailwindcss": "latest",
+    "typescript": "latest"
   }
 }

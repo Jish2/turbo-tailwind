@@ -1,8 +1,13 @@
-// Does not find the package when hitting ctrl+click.
-// This works if importing into a TypeScript file (see foo-typescript.tsx)
-import { Card } from '@repo/ui';
-import { Bar } from '@repo/ui/bar'
+import { Bar } from '@repo/ui/bar';
+import { Card } from '@repo/ui/ts/card';
 
-export function Foo() {
-  return <Card ><Bar /></Card>;
+import { Baz } from '@ui/baz';
+
+export const Foo = () => {
+  return (
+    <Card >
+      <Bar />
+      <Baz />
+    </Card>
+  );
 }

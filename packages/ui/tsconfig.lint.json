@@ -1,6 +1,6 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
-  "include": ["."],
+  "include": [".", "src", "turbo"],
   "exclude": [
     "dist",
     "build",

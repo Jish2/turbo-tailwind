@@ -1,48 +1,18 @@
-const { resolve } = require("node:path");
+const base = require("./base");
 
-const project = resolve(process.cwd(), "tsconfig.json");
-
-/*
- * This is a custom ESLint configuration for use with
- * Next.js apps.
- *
- * This config extends the Vercel Engineering Style Guide.
- * For more information, see https://github.com/vercel/style-guide
- *
- */
-
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: [
-    "@vercel/style-guide/eslint/node",
-    "@vercel/style-guide/eslint/typescript",
-    "@vercel/style-guide/eslint/browser",
-    "@vercel/style-guide/eslint/react",
-    "@vercel/style-guide/eslint/next",
-    "eslint-config-turbo",
-  ].map(require.resolve),
-  parserOptions: {
-    project,
-  },
-  globals: {
-    React: true,
-    JSX: true,
-  },
-  settings: {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
-    "import/resolver": {
-      typescript: {
-        project,
-      },
-      node: {
-        extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx"],
-      },
-    },
-  },
-  ignorePatterns: ["node_modules/", "dist/"],
-  // add rules configurations here
-  rules: {
-    "import/no-default-export": "off",
-  },
+    "plugin:eslint-plugin-storybook/recommended",
+    "plugin:eslint-plugin-mdx/recommended",
+    // a11y, import, and many other plugins are already included by the below
+    // Need to use require.resolve because files names do not start with eslint-config-*
+    require.resolve("@vercel/style-guide/eslint/node"),
+    require.resolve("@vercel/style-guide/eslint/typescript"),
+    require.resolve("@vercel/style-guide/eslint/browser"),
+    require.resolve("@vercel/style-guide/eslint/react"),
+    require.resolve("@vercel/style-guide/eslint/next"),
+    require.resolve("eslint-config-turbo"),
+  ],
+  ...base,
 };

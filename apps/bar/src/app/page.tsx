@@ -1,7 +1,7 @@
+import { Card } from "@repo/ui/ts/card";
 import Image from "next/image";
-import { Card } from "@repo/ui/card";
 
-function Gradient({
+const Gradient = ({
   conic,
   className,
   small,
@@ -9,7 +9,7 @@ function Gradient({
   small?: boolean;
   conic?: boolean;
   className?: string;
-}): JSX.Element {
+}): JSX.Element => {
   return (
     <span
       className={`absolute mix-blend-normal will-change-[filter] rounded-[100%] ${
@@ -43,7 +43,7 @@ const LINKS = [
   },
 ];
 
-export default function Page(): JSX.Element {
+const Page = (): JSX.Element => {
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-24">
       <div className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex">
@@ -136,3 +136,5 @@ export default function Page(): JSX.Element {
     </main>
   );
 }
+
+export default Page;

@@ -1,0 +1,29 @@
+{
+  "extends": "@repo/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"],
+      "@lib/*": ["src/lib/*"],
+      "@styles/*": ["src/styles/*"],
+      "@ui/*": ["src/ui/*"],
+      "@context/*": ["src/context/*"],
+      "@templates/*": ["src/templates/*"],
+      "@images/*": ["src/images/*"],
+      "@public/*": ["public/*"],
+    },
+  },
+  "include": [
+    "next-env.d.ts",
+    ".",
+    ".next/types/**/*.ts",
+    ".storybook/**/*.js",
+    ".storybook/**/*.jsx",
+    ".storybook/**/*.ts",
+    ".storybook/**/*.tsx",
+  ],
+  "exclude": ["node_modules"],
+}

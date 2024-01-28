@@ -13,6 +13,7 @@
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "latest",
     "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.15.0",

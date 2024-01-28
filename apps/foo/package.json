@@ -1,0 +1,45 @@
+{
+  "name": "foo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@repo/ui": "workspace:*",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "latest"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "latest",
+    "@next/eslint-plugin-next": "latest",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@storybook/addon-essentials": "8.0.0-alpha.15",
+    "@storybook/addon-interactions": "8.0.0-alpha.15",
+    "@storybook/addon-links": "8.0.0-alpha.15",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "8.0.0-alpha.15",
+    "@storybook/nextjs": "8.0.0-alpha.15",
+    "@storybook/react": "8.0.0-alpha.15",
+    "@storybook/test": "8.0.0-alpha.15",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint-plugin-storybook": "^0.6.15",
+    "postcss": "latest",
+    "storybook": "8.0.0-alpha.15",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
